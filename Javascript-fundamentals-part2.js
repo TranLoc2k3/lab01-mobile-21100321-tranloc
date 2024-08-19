@@ -35,6 +35,29 @@ let bills = [125, 555, 44]
 let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 let toltal = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-console.log("Bills: ", bills);
-console.log("Tips: ", tips);
-console.log("Total: ", toltal);
+// console.log("Bills: ", bills);
+// console.log("Tips: ", tips);
+// console.log("Total: ", toltal);
+
+// Coding Challenge #3
+let Mark = {
+    fullname: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+}
+let John = {
+    fullname: "John Smith",
+    mass: 92,
+    height: 1.95,
+}
+
+function calcBMI(mass, height) {
+    return mass / height ** 2;
+}
+
+if (calcBMI(Mark.mass, Mark.height) > calcBMI(John.mass, John.height)) {
+    console.log(`${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)}) is higher than ${John.fullname}'s BMI (${calcBMI(John.mass, John.height)})`);
+}
+else {
+    console.log(`${John.fullname}'s BMI (${calcBMI(John.mass, John.height)}) is higher than ${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)})`);
+}
