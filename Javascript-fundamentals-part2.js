@@ -1,6 +1,6 @@
 // Ho va ten: Tran Loc
 // MSSV: 21100321
-// Lab02- Javascript-fundamentals-part2
+// Lab01- Javascript-fundamentals-part2
 
 // Coding Challenge #1
 function calcAverage(score1, score2, score3) {
