@@ -40,9 +40,23 @@ let scoreKoalas = [88, 91, 110];
 let averageDolphins = (scoreDolphins[0] + scoreDolphins[1] + scoreDolphins[2]) / 3;
 let averageKoalas = (scoreKoalas[0] + scoreKoalas[1] + scoreKoalas[2]) / 3;
 
-if (averageDolphins > averageKoalas && averageDolphins >= 100) {
-    console.log("Dolphins win the trophy!");
+// if (averageDolphins > averageKoalas && averageDolphins >= 100) {
+//     console.log("Dolphins win the trophy!");
+// }
+// else {
+//     console.log("Koalas win the trophy!");
+// }
+
+
+// Coding Challenge #4
+let bill = 430;
+let tip;
+
+if (bill >= 50 && bill <= 300) {
+    tip = bill * 0.15;
 }
 else {
-    console.log("Koalas win the trophy!");
+    tip = bill * 0.2;
 }
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
