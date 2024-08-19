@@ -19,16 +19,30 @@ let MarkHigherBMI = MarkBMI > JohnBMI;
 
 
 // Coding Challenge #2
-if (MarkBMI > JohnBMI) {
-    console.log("Mark's BMI is higher than John's!");
-}
-else {
-    console.log("John's BMI is higher than Mark's!");
-}
+// if (MarkBMI > JohnBMI) {
+//     console.log("Mark's BMI is higher than John's!");
+// }
+// else {
+//     console.log("John's BMI is higher than Mark's!");
+// }
 
-if (MarkBMI > JohnBMI) {
-    console.log(`Mark's BMI (${MarkBMI}) is higher than John's (${JohnBMI})!`);
+// if (MarkBMI > JohnBMI) {
+//     console.log(`Mark's BMI (${MarkBMI}) is higher than John's (${JohnBMI})!`);
+// }
+// else {
+//     console.log(`John's BMI (${JohnBMI}) is higher than Mark's (${MarkBMI})!`);
+// }
+
+// Coding Challenge #3
+let scoreDolphins = [96, 108, 89];
+let scoreKoalas = [88, 91, 110];
+
+let averageDolphins = (scoreDolphins[0] + scoreDolphins[1] + scoreDolphins[2]) / 3;
+let averageKoalas = (scoreKoalas[0] + scoreKoalas[1] + scoreKoalas[2]) / 3;
+
+if (averageDolphins > averageKoalas && averageDolphins >= 100) {
+    console.log("Dolphins win the trophy!");
 }
 else {
-    console.log(`John's BMI (${JohnBMI}) is higher than Mark's (${MarkBMI})!`);
+    console.log("Koalas win the trophy!");
 }
