@@ -55,9 +55,24 @@ function calcBMI(mass, height) {
     return mass / height ** 2;
 }
 
-if (calcBMI(Mark.mass, Mark.height) > calcBMI(John.mass, John.height)) {
-    console.log(`${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)}) is higher than ${John.fullname}'s BMI (${calcBMI(John.mass, John.height)})`);
+// if (calcBMI(Mark.mass, Mark.height) > calcBMI(John.mass, John.height)) {
+//     console.log(`${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)}) is higher than ${John.fullname}'s BMI (${calcBMI(John.mass, John.height)})`);
+// }
+// else {
+//     console.log(`${John.fullname}'s BMI (${calcBMI(John.mass, John.height)}) is higher than ${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)})`);
+// }
+
+
+// Coding Challenge #4
+let bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips2 = [];
+let toltals2 = [];
+
+for (let i = 0; i < bills2.length; i++) {
+    tips2.push(calcTip(bills2[i]));
+    toltals2.push(bills2[i] + tips2[i]);
 }
-else {
-    console.log(`${John.fullname}'s BMI (${calcBMI(John.mass, John.height)}) is higher than ${Mark.fullname}'s BMI (${calcBMI(Mark.mass, Mark.height)})`);
-}
+
+console.log("Bills: ", bills2);
+console.log("Tips: ", tips2);
+console.log("Total: ", toltals2);
